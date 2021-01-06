@@ -1,0 +1,249 @@
+html{
+
+  scroll-padding-top: 60px;
+}
+
+ .contents-a{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(images/first.png);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: color-burn;
+    
+  }
+
+  .contents-b{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(images/second.png);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: color-burn;
+  }
+
+  .contents-c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(images/third.png);
+    background-color: rgba(255, 255, 255, 0.8);
+    background-blend-mode: lighten;
+  }
+
+  .contents-d{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(images/fourth.png);
+  }
+
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  .gallery__list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .gallery__item {
+    width: calc(95% / 2);
+  }
+  .gallery__item:not(:nth-child(-n+2)) {
+    margin-top: 20px;
+  }
+  .gallery__item img {
+    width: 100%;
+    height: auto;
+  }
+  .gallery__item a {
+    transition: .5s;
+  }
+  .gallery__item a:hover {
+    filter: opacity(0.7);
+  }
+  .gallery__item a:hover img {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  }
+
+
+  #page_top {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+}
+#page_top a {
+    background-color: #999;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px 20px;
+}
+#page_top a:hover {
+    background-color: #666;
+    text-decoration: none;
+}
+  
+  
+  
+  
+  
+ .contents-a .title{
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 2rem;
+  }
+
+.tops{
+    background: linear-gradient(transparent 70%,#ffd900 0%);
+}
+  
+  
+
+
+  
+  
+  
+  @media screen and (max-width: 768px) {
+    .contents-a .title{
+      font-size: 35px;
+      margin-bottom: 20px;
+      padding: 0;
+    }
+  
+    .contents-a .text{
+      font-size: 18px;
+    }
+
+    .contents-a,.contents-b,.contents-c,.contents-d{
+      background-attachment: scroll;
+    }
+  
+    
+  }
+  
+  
+  
+  
+  
+  #page_top {
+      position: fixed;
+      bottom: 30px;
+      right: 0px;
+  }
+  #page_top a {
+      background-color: #17a2b8;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+      padding: 20px 20px;
+      border-radius: 0px;
+  }
+  #page_top a:hover {
+      background-color:#0c5763 ;
+      text-decoration: none;
+  }
+  
+  
+  
+  .fadein {
+    opacity : 0;
+    transform: translateY(20px);
+    transition: all 1s;
+    
+
+  }
+
+  
+
+
+.fa-code{
+    color: #e34c26;
+}
+
+.fa-php{
+    color: #a16eff;
+}
+
+.fa-js-square{
+    color: #0769ad;
+}
+
+.fa-wordpress-simple{
+    color: #21759b;
+}
+
+.fa-twitter-square{
+  color: #1da1f2;
+}
+
+
+
+
+
+  
+@media screen and (max-width: 768px){
+    
+    .about-area-decription-text{
+        text-align: center;
+    }
+
+    .about-area-img{
+        border-radius: 50%;
+    }
+
+    
+}
+
+
+
+label{
+  display: block;
+}
+
+input{
+  display: block;
+  width: 100%;
+  border: 1px solid #d8d8d8;
+}
+
+textarea{
+  display: block;
+  width: 100%;
+  border: 1px solid #d8d8d8;
+}
+
+.form-content{
+  margin-bottom: 16px;
+}
+
+.btn-warning{
+  width: 100%;
+}
+  
+  
+  
+  
